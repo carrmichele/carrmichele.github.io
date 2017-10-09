@@ -230,28 +230,22 @@ a{
 	height: 100%;
 
 	}
-	p {
-	font-size: 100%;
-	text-align: center;
-	letter-spacing: 200% !important;
-	position: relative;
 
-	}
   	.title {
-	font-size: 200%;
+	font-size: 400%;
   	padding: 2%;
-    	margin-top: 80%;
+    	margin-top: 70%;
     	letter-spacing: 10%;
 
     }
     .info {
-    	font-size: 200%;
+    	font-size: 400%;
     	letter-spacing: 40%;
     	line-height: 100%;
     	margin-bottom: 20%;
     }
     .glyphicon-chevron-down {
-	    margin-botton: 10%;
+	    margin-botton: 30%;
   
 }
 
