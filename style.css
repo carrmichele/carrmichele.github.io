@@ -124,6 +124,7 @@ p {
 }
 
 .glyphicon {
+	font-size: 60px !important;
 	color: #00b359;
 }
 
@@ -231,10 +232,10 @@ a{
 	}
 
   	.title {
-	font-size: 500%;
+	font-size: 600%;
   	padding: 2%;
-    	margin-top: 60%;
-    	letter-spacing: 10%;
+    	margin-top: 50%;
+    	letter-spacing: 20%;
 
     }
     .info {
