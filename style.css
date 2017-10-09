@@ -231,6 +231,7 @@ a{
 
 	}
 	p {
+	font-size: 100%;
 	text-align: center;
 	letter-spacing: 200% !important;
 	position: relative;
@@ -239,18 +240,18 @@ a{
   	.title {
 	font-size: 200%;
   	padding: 2%;
-    	margin-top: 60%;
+    	margin-top: 80%;
     	letter-spacing: 10%;
 
     }
     .info {
-    	font-size: 110%;
+    	font-size: 200%;
     	letter-spacing: 40%;
     	line-height: 100%;
     	margin-bottom: 20%;
-
-
     }
+    .glyphicon-chevron-down {
+	    margin-botton: 10%;
   
 }
 
@@ -279,7 +280,7 @@ a{
     }
 }
 
-@media screen and (min-width: 1020px) and (max-width: 1360px){
+@media screen and (min-device-width: 1020px) and (max-device-width: 1360px){
   	.jumbotron {
 		width: 100%;
 		background-size: cover;
@@ -305,7 +306,7 @@ a{
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 1920px){
+@media screen and (min-device-width: 1024px) and (max-device-width: 1920px){
   	.jumbotron {
 		width: 100%;
 		background-size: cover;
