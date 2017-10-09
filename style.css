@@ -220,8 +220,8 @@ a{
   }
 
 
-/* Portrait 
-@media screen and (min-width: 300px) and (max-width: 414px){
+/* Portrait */
+@media screen and (min-device-width: 300px) and (max-device-width: 414px){
   	.jumbotron {
 		width: 100%;
 		background-size: cover;
@@ -253,7 +253,7 @@ a{
     }
 }
 
-@media screen and (min-width: 736px) and (max-width: 790px){
+@media screen and (min-device-width: 736px) and (max-device-width: 790px){
   	.jumbotron {
 		width: 100%;
 		background-size: cover;
