@@ -232,9 +232,9 @@ a{
 	}
 
   	.title {
-	font-size: 400%;
+	font-size: 500%;
   	padding: 2%;
-    	margin-top: 70%;
+    	margin-top: 60%;
     	letter-spacing: 10%;
 
     }
@@ -245,7 +245,7 @@ a{
     	margin-bottom: 20%;
     }
     .glyphicon-chevron-down {
-	    margin-botton: 30%;
+	    margin-botton: 50%;
   
 }
 
@@ -281,8 +281,8 @@ a{
 
 	}
   	.title {
-  		padding: 2%;
-  		line-height: 80%;
+  	padding: 2%;
+  	line-height: 80%;
     	letter-spacing: 80%;
 
     }
