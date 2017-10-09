@@ -41,7 +41,7 @@ body {
 }
 
 .glyphicon-chevron-down {
-	font-size: 50%;
+	font-size: 100%;
 }
 
 .btn-block {
@@ -222,7 +222,7 @@ a{
   }
 
 
-/* Portrait */
+/* Portrait 
 @media screen and (min-device-width: 300px) and (max-device-width: 414px){
   	.jumbotron {
 		width: 100%;
@@ -250,9 +250,7 @@ a{
 
 
     }
-    .glyphicon {
-    	margin-bottom: 40%;
-    }
+  
 }
 
 @media screen and (min-device-width: 736px) and (max-device-width: 790px){
