@@ -222,22 +222,23 @@ a{
   }
 
 
-/* Portrait 
+/* Portrait */
 @media screen and (min-device-width: 300px) and (max-device-width: 414px){
   	.jumbotron {
-		width: 100%;
-		background-size: cover;
-		height: 100%;
+	width: 100%;
+	background-size: cover;
+	height: 100%;
 
 	}
 	p {
-		text-align: center;
-		letter-spacing: 200% !important;
-		position: relative;
+	text-align: center;
+	letter-spacing: 200% !important;
+	position: relative;
 
 	}
   	.title {
-  		padding: 2%;
+	font-size: 200%;
+  	padding: 2%;
     	margin-top: 60%;
     	letter-spacing: 10%;
 
