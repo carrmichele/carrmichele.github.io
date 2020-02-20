@@ -3,41 +3,49 @@ body {
 }
 
 .navbar {
-      margin-bottom: 0;
-      background-color: #000;
-			opacity: 0.7;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+	opacity: 0.7;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1));
   }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
   }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #00b359 !important;
-      background-color: #fff !important;
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #00b359 !important;
+  background-color: #fff !important;
   }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
+
+.navbar-default .navbar-toggle {
+  color: #fff !important;
   }
 
 .navbar-brand {
-	color: white !important;
 }
 
+.heading{
+  font-size: 18px;
+}
+
+
 .jumbotron {
-    background: url("https://images.unsplash.com/photo-1485498128961-422168ba5f87?dpr=1&auto=compress,format&fit=crop&w=2902&h=&q=80&cs=tinysrgb&crop=") no-repeat center center;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
+  background: url(Media/harry-knight-mqpY5vyNrKE-unsplash.jpg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
 	-o-background-size: 100%;
 	background-size: cover;
 	text-align: center;
-	height: 100%;
+	height: auto;
+  padding-bottom: 200px;
+  opacity: 0.8;
 }
 
 .glyphicon-chevron-down {
@@ -63,23 +71,20 @@ body {
 }
 
 .title {
-  font-size: 100%;
-  margin-top: 20%;
-  color: black !important;
+  font-size: 48px;
+  margin: 200px auto 10px auto;
+  color: white !important;
   text-align: center;
   left: 0;
   right: 0;
   letter-spacing: 1%;
-
   }
 
 .info {
-	color: white !important;
+	color: #fff !important;
 	text-align: center;
-	padding-left: 5%;
-	padding-right: 5%;
-	top: 10%;
-    letter-spacing: 3px;
+	margin: 20px auto 50px auto;
+  letter-spacing: 3px;
 }
 
 .about-header {
@@ -100,7 +105,9 @@ body {
   padding: 40px 50px;
   }
 
-
+h2 {
+  text-align: center;
+}
 
 h4 {
 	color: #00b359 !important;
@@ -110,17 +117,30 @@ h4 {
 
 #services {
 	font-family: 'Roboto', sans-serif;
-	background-color: #f2f2f2;
-	margin-bottom: 40px;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	
+	margin: 100px auto 200px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.servicefont{
+  font-size: 16px;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	text-align: left;
+}
+
+.thumbnail {
+  border: none;
 }
 
 .glyphicon {
@@ -141,6 +161,7 @@ a{
 	padding-left: 5%;
 	padding-right: 5%;
 	font-family: 'Roboto', sans-serif;
+  margin: 200px auto 100px auto;
 }
 
 
