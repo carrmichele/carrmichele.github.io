@@ -1,260 +1,188 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Caroline Gordon's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  
+    <meta charset="UTF-8">
+    <title>Caroline Gordon's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li a {
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #0077b6;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 5rem 0;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .portfolio-item {
+            margin-bottom: 4rem;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .portfolio-item h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .portfolio-item p {
+            margin-bottom: 1rem;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-links a {
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .contact-links a:hover {
+            color: #0077b6;
+        }
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-
 <body>
-	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">caroline gordon</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-	<li><a href="#services">ABOUT</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">EXPERIENCE</a></li>
-	<li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Caroline Gordon</h1>
+            <p>Product Manager & Web Developer</p>
+        </div>
+    </header>
 
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>Caroline has 4+ years of experience designing and shipping innovative digital products (2+ million MAUs) for startups, remote teams and Fortune 100 corporations. She is the founder of CaliQuests.com, a sustainable travel company. Currently working on improving consumer awareness of the impact travelers have on their environment. Planting a tree for every customer who uses Caliquests.com and giving 5% of profits to wildfire relief charities in California.</p>
+        </section>
 
-<div class="jumbotron row no-gutters" id="home">
-  <h1 class="title">caroline gordon</h1>  
-	<br>
-	<h4 class="info">my name is caroline and this is my portfolio and an overview of how I work.</h4>
-	<a href="#services"><span class="glyphicon glyphicon-chevron-down"></span></a><br><br>
+        <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="Media/IfOnly/priceless_currency_tool.gif" alt="Currency Converter Tool">
+                <h3>Currency Converter Tool</h3>
+                <p>Designed and led the development of a currency conversion selector for international users on priceless.com. Integrated with the existing language selector in the platform's navigation bar.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Media/IfOnly/redesign_2_checkoutPage_customerDetails.png" alt="Checkout Flow Redesign">
+                <h3>IfOnly and Priceless Cities Checkout Flow Redesign</h3>
+                <p>Led the initiative to redesign the platform checkout flow and implement a new guest checkout feature. Conducted multiple usability tests to inform the new design.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Media/CaliQuests/caliquests_homepage.png" alt="Cali Quests">
+                <h3>Cali Quests Adventure Travel Website</h3>
+                <p>Developed an adventure travel website offering customized road-trips, group trips, and a blog featuring travel tips and ideas.</p>
+            </div>
+        </section>
 
-</div>
-    
-<!-- Begin Services section-->
-<div id="services" class="container text-center well ">
-	<div class="row slideanim">
-		<br>
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="http://github.com/carrmichele"><i class="fab fa-github"></i></a>
+                <a href="http://linkedin.com/in/carolinemgordon"><i class="fab fa-linkedin"></i></a>
+                <a href="freecodecamp.com/carrmichele"><i class="fab fa-free-code-camp"></i></a>
+                <a href="https://angel.co/caroline-michele"><i class="fab fa-angellist"></i></a>
+            </div>
+            <p><i class="far fa-envelope"></i> <a href="mailto:carolinemicheleg@gmail.com">carolinemicheleg@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> 407-405-3428</p>
+        </section>
+    </main>
 
-<br>
-		<div class="img "> <img src="Media/leaf_icon.png" alt="caroline gordon designs" height="40px" width="40px"></div>
-
-  <h2>hello!</h2></div>
-
-  <hr/>
-  <br>
-
-  <div class="row slideanim">
-  	<div class="col-sm-6"></div>
-		<div class="col-lg-2 servicefont">xy</div>
-		<div class="col-lg-8 servicefont">z</div>
-		<div class="col-lg-2 servicefont">zd</div></div>
-<br>
-		<div class="row slideanim">
-			 	<div class="col-sm-6">sd</div>
-			<div class="col-lg-2 servicefont">sd</div>
-		<div class="col-lg-8 servicefont">sd</div>
-		<div class="col-lg-2 servicefont">sd</div></div>
-<br>
-
-
-</div>
-
-
-<!-- End services section -->
-
-<!--Begin Portfolio section -->
-<div  class="container" id="portfolio" >
-	<div class="row slideanim">
-	<br><br>
-		<h2 id="port">portfolio</h2>
-				
-</div>
-		<hr/>
-	
-<br><br>
-<!--begin Currency Converter Tool -->
-	<div class="row slideanim">
-	<div class="col-sm-7">
-		<h3>currency converter tool</h3>
-		<h5 id="product">as seen on Hyatt and Mastercard platforms</h5><br>
-		<p>I designed and led the development of a currency conversion selector that enabled international users to make purchases on priceless.com. Since there was an existing language selector in the platform's navigation bar, I designed the currency selector to be integrated in the same dropdown. </p>
-		<h5><a href="Media/IfOnly/hyatt_currency_converter.mp4">Hyatt live demo</a></h5>
-	</div>
-<div class="col-sm-5">
-	<br>
-	<a href="Media/IfOnly/priceless_currency_tool.gif"><img class="img-responsive" src="Media/IfOnly/priceless_currency_tool.gif" alt="Priceless Currency Converter"></a>
-		</div>
-	</div>
-	<!--End Currency Converter Tool-->
-<br><br>
-<!--begin Checkout Flow -->
-<div class="row well slideanim">
-<div class="col-sm-5">
-	<br>
-	<a href="Media/IfOnly/redesign_2_checkoutPage_customerDetails.png"><img class="img-responsive" src="Media/IfOnly/redesign_2_checkoutPage_customerDetails.png" alt="IfOnly Checkout redesign"></a>
-		</div>
-
-<div class="col-sm-7">
-		<h3>IfOnly and Priceless Cities Checkout Flow Redesign</h3>
-		<h5 id="product">as seen on IfOnly.com Hyatt and Mastercard platforms</h5><br>
-		<p>For this project I was responsible for leading the initiative to redesign the platform checkout flow and implement the new guest checkout feature. I conducted multiple usability tests and designed the new checkout flow based on those findings.</p>
-		<h5><a href="Media/IfOnly/current_checkout_page.png">View Old Checkout Page</a></h5>
-	</div>
-	</div>
-	<!--End Checkout flow-->
-<br><br>
-<!--begin Cali Quests -->
-	<div class="row slideanim">
-	<div class="col-sm-7">
-		<h3>Cali Quests Adventure Travel Website</h3>
-		<h5 id="product">content creation • full scope brand design • full stack web development</h5><br>
-		<p>Cali Quests is an adventure travel website that offers customized road-trips, group trips, and a blog featuring articles about travel tips/ideas. The company was built as a solution to provide detailed travel itineraries for people interested in visiting the West Coast.</p>
-	
-	</div>
-<div class="col-sm-5">
-	<br>
-	<a href="Media/CaliQuests/caliquests_homepage.png"><img class="img-responsive" src="Media/CaliQuests/caliquests_homepage.png" alt="Cali Quests" width="100%"></a>
-		</div>
-	</div>
-
-
-	<!--End Cali Quests-->
-
-
-	<br>
-	 
-	 <!--Begin Bao Down Project-->
-<div class="row link slideanim well">
-  <div class="col-sm-5">
-		<a href="https://baodown.net">	<img class="img-responsive" src="Media/BaoDown/baodown_homepage.jpg" alt="Bao Down" width="100%"></a>
-    </div>
-    <div class="col-sm-7">
-	<h3>Bao Down Restaurant Group</h3>
-	<h5 id="product">content creation • website design • API integration</h5><br>
-			<p>This project featured custom Wordpress development and design along with content creation. </p>
-		<p>The goal of the project was to create a responsive website with a clean minimilist style that resonated with the upbeat personality of the Bao Down franchise. Along with the blog portion of the website, it also features social media links, and an about section.</p>
-	</div></div>
-	<!--End Bao Down-->
-
-	<!--begin Saintilus Consulting Project -->
-	<div class="row link slideanim">
-	<div class="col-sm-7">
-		<h3>Saintilus Consulting Group</h3>
-		<h5 id="product">logo design • ui/ux design • wordpress development</h5><br>
-		<p>The purpose of this project was to redesign and develop a multi-page business website for Saintilus Consulting Group.</p>
-		<p>Our goal was to create a unique company homepage, about page, contact page, services page, careers page, and research page.</p><br>
-	</div>
-		<div class="col-sm-5">
-		<a href="Media/saintilusConsultingLogo.png">	<img class="img-responsive" src="Media/saintilusConsultingLogo.png" width="60%"></a>
-		</div>
-	</div>
-	<!--End Saintilus Consulting Group-->
-
-
-	<br>
-	<hr>
-	</div>
-
-
-	<!-- Container (About Section) 
-<div id="about" class="container-fluid purpose"><br><br>
-	<div class="row slideanim">
-		<br>
-	 <h2>Meet Caroline</h2> 
-	 <hr/>
-		 <div class="well about"> 
-		 	<div class="row">
-		 	<div class="col-lg-4">
-			 <span class="img"> <center><img src="Media/CB9E5E20-9971-4CF2-88B0-F689CBF0D78A.jpg" class="img-responsive" alt="caroline_gordon_web_rejuvenate"> </center></span></div>
-			 <div class="col-lg-8">
-			 	<hr/>
-			<p>Caroline has 4+ years of experience designing and shipping innovative digital products (2+ million MAUs) for startups, remote teams and Fortune 100 corporations. </p>
-
-<p>She is the founder of CaliQuests.com, a sustainable travel company.
-Currently working on improving consumer awareness of the impact travelers have on their environment. Planting a tree for every customer who uses Caliquests.com and giving 5% of profits to wildfire relief charities in California.</p>
-
-<p>Interested in building products that solve every day problems, and developing solutions to improve the housing inequality crisis, environment, and affordable education. </p>
-			<a href="#portfolio" class="btn btn-block" role="button">portfolio</a></div></div>
-			<div class="row">
-				<div class="col-lg-4 slideanim">
-					<h3>education</h3><hr/>
-			<p>I completed my undergraduate studies in Mathematics and Chemistry at Florida State University in 2016. During that time I gained experience working in a research lab at the <a href="http://med.fsu.edu/index.cfm?page=bssm.GlueckaufLab">College of Medicine</a>, and another research lab at the <a href="https://www.chem.fsu.edu/~strouse/NB.html">Department of Chemistry</a> and <a href="https://nationalmaglab.org">National High Magnetic Field Laboratory</a></p>
-			<p>During my undergraduate career, I was admitted into several honors organizations, and was elected as the president of a student research organization. My other activities included volunteering with local charities, and working as a mentor/tutor to college freshman and high school students.</p>
-		</div>
-				<div class="col-lg-4">
-					<h3>professional experience</h3><hr/>
-					<p>My academic research experience extended over a period of 3 years and included work in magnetism, nano-biomedicine, minority healthcare and data analytics.</p>
-					<p>In addition to research experience, I gained professional industry experinece working as a software engineer intern for a startup tech consulting firm. I then utilized my acquired tech skills to work as a freelance web developer and worked on various side projects during this time. Currently, I have been working as a software analyst for a laboratory in South San Francisco. </p> </div>
-			<div class="col-lg-4">
-				<h3>personal interests</h3> <hr/>
-				<p>When I'm not working on web development projects, I enjoy spending my free time researching biomedical technologies, perusing science articles, and working on my side projects.</p>
-				<p> Other interests include: <br>
-					•playing the piano<br>
-					•researching biomedical technologies<br>
-					•chess<br>
-					•learning new languages<br>
-					•snowboarding</p></div><br>
-			</div></div></div>
-
-Begin Contact section -->
-<div id="contact" class="container-fluid" ><br>
-			<div class="row slideanim">
-	 <h2>Contact Caroline</h2> 
-		</div>				
-	<div class="row">
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4"><a href="http://github.com/carrmichele"><i class="fa fa-github"></i></a>
-			<a href="http://linkedin.com/in/carolinemgordon"><i class="fa fa-linkedin"></i></a>
-			<a href="freecodecamp.com/carrmichele"><i class="	fa fa-free-code-camp"></i></a>
-			<a href="https://angel.co/caroline-michele"><i class="fa fa-angellist"></i></a>
-	</div>
-	<div class="col-sm-4"></div>
-	</div><hr>
-	<div class="row">
-		<div class="col-sm-6"><i class="fa fa-envelope-o"></i> <a href="mailto:webrejuvenate@gmail.com">carolinemicheleg@gmail.com</a>  </div>
-		<div class="col-sm-6"><i class="fa fa-mobile-phone"></i> 407-405-3428</div> 
-		</div>
-
-	</div>
-	
-	
-<!-- End Contact section -->
-	
-
-<div class="footer ">
-	<div class="container">
-	<div class="row">
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4">made in California by <a href="github.com/carrmichele">Caroline Gordon</a></div>
-		<div class="col-sm-4"></div></div>
-		
-
-	</div></div>
-	
-	
+    <footer>
+        <p>Made in California by <a href="github.com/carrmichele">Caroline Gordon</a></p>
+    </footer>
 </body>
 </html>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
-    <script src="js/index.js"></script>
-
-</body>
-</html>
